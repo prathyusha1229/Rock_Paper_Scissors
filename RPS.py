@@ -4,12 +4,12 @@
 # In[ ]:
 
 
-import random
+import secrets
 
 game={1:"Rock",2:"Paper", 3: "Scissors"}
 choice=int(input("Choose a number[1:Rock,2:Paper, 3: Scissors]:"))
 
-computer=random.randint(1,3)
+computer=secrets.SystemRandom().randint(1,3)
 print(f"{game[computer]}")
 
 if choice==computer:
